@@ -9,7 +9,7 @@ class Webgrind_Config extends Webgrind_MasterConfig {
     /**
      * Automatically check if a newer version of webgrind is available for download
      */
-    static $checkVersion = true;
+    static $checkVersion = false;
     static $hideWebgrindProfiles = true;
 
     /**
@@ -30,9 +30,9 @@ class Webgrind_Config extends Webgrind_MasterConfig {
      */
     static $graphImageType = 'svg';
 
-    static $defaultTimezone = 'Europe/Copenhagen';
+    static $defaultTimezone = 'Europe/London';
     static $dateFormat = 'Y-m-d H:i:s';
-    static $defaultCostformat = 'percent'; // 'percent', 'usec' or 'msec'
+    static $defaultCostformat = 'usec'; // 'percent', 'usec' or 'msec'
     static $defaultFunctionPercentage = 90;
     static $defaultHideInternalFunctions = false;
 
